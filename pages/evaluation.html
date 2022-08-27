@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee evaluation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="stylesheet" href="../main.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="navbar">
+            <li><a class="active" href="#home"><span class="style3val"> 3VAL</span></a></li>
+            <div class="rightSideNav">
+            <li ><a href="report.html"><button class="button-17" role="button">Evaluation Results</button></a>
+            </li>
+            <li  ><a href="../index.html"><button class="button-17" role="button">Home</button></a>
+            </li>
+        </div>
+        </ul>
+
+
+
+    </nav>
+    </header>
+<section class="welcomePageBackground">
+    <div class="containerWelcome">
+      <h1 id="welcomeMessage" > Welcome username</h1> 
+     
+    
+    <section class="employeeSelection">
+      <h2>please select an employee to start<br> the evaluation</h2>    
+      <p class="evaluationText">
+        Please note that you will be filling a questionnaire<br> that contains 3
+        sections to evaluate your employee <br>(personal, professional, technical)
+        and then we will <br>recommend you advices based on your answers.
+      </p>
+      <select name="" id="employeeNameSelect" class="empolyeeName">
+        <option value="the employee" >Employee Name</option>
+        <option value="Hamza">Hamza</option>
+        <option value="Majd">Majd</option>
+        <option value="Jameel">Jameel</option>
+        <option value="Rahaf">Rahaf</option>
+      </select>
+
+      <img class="welcome"  src="images/welome.png">
+      <button class="evaluationBtn button-55" id="start">start the evaluation</button>
+</div>
+    </section>
+</section>
+
+<section class="employeeFormEval" id="fir">
+  <h2>Employee Evaluation </h2>
+  <form action="" class="evaluationForm" >
+    <div class="personal-section">
+      <h3 class="criteriaHeader">personal Criteria  <img id="showMore" onclick="showOne()" src="images/showmore.png" > </h3>
+      <ol  id="p1_text">
+        <li id="q-0">The employee personality and charisma is truly magnetic.</li>
+        <div class="radioBox">
+          <input class="radioStyle" type="radio" name="personal-first" id="p-f-e" />
+          <label for="p-f-e">excellent</label>
+        </div>
+        <div class="radioBox">
+          <input type="radio" name="personal-first" id="p-f-g" />
+          <label for="p-f-g">good</label>
+        </div>
+        <div class="radioBox">
+          <input type="radio" name="personal-first" id="p-f-p" />
+          <label for="p-f-p">poor</label>
+        </div>
+
+        <li id="q-1">The employee is a person of charisma and influence.</li>
+        <div class="radioBox">
+          <input type="radio" name="personal-second" id="p-s-e" />
+          <label for="p-s-e">excellent</label>
+        </div>
+        <div class="radioBox"> 
+          <input type="radio" name="personal-second" id="p-s-g" />
+          <label for="p-s-g">good</label>
+        </div>
+        <div class="radioBox">
+          <input type="radio" name="personal-second" id="p-s-p" />
+          <label for="p-s-p">poor</label>
+        </div>
+        <li id="q-2">
+          The employee is a very soft spoken person and never lose his
+          temper.
+        </li>
+        <div class="radioBox">
+          <input type="radio" name="personal-third" id="p-t-e" />
+          <label for="p-t-e">excellent</label>
+        </div>
+        <div class="radioBox">
+          <input type="radio" name="personal-third" id="p-t-g" />
+          <label for="p-t-g">good</label>
+        </div>
+        <div class="radioBox">
+          <input type="radio" name="personal-third" id="p-t-p" />
+          <label for="p-t-p">poor</label>
+        </div>
+    
+      </ol>
+    
+    </div>
+    
+    <div class="professionalSection">
+      <h3 class="criteriaHeader">professional Criteria  <img id="showMore" onclick="showTwo()" src="images/showmore.png" ></h3>
+      <ol id="p2_text">
+        <li id="q-3">The employee’s dress and personal appearance</li>
+        <div class="radioBox">
+          <input type="radio" name="professional-first" id="pro-f-e" />
+          <label for="pro-f-e">excellent</label>
+        </div>
+        <div class="radioBox">
+          <input type="radio" name="professional-first" id="pro-f-g" />
+          <label for="pro-f-g">good</label>
+        </div>
+        <div class="radioBox">
+          <input type="radio" name="professional-first" id="pro-f-p" />
+          <label for="pro-f-p">poor</label>
+        </div>
+
+        <li id="q-4">the employee is accountable for his tasks</li>
+        <div class="radioBox">
+          <input type="radio" name="professional-second" id="pro-s-e" />
+          <label for="pro-s-e">excellent</label>
+        </div>
+        <div class="radioBox">
+          <input type="radio" name="professional-second" id="pro-s-g" />
+          <label for="pro-s-g">good</label>
+        </div>
+        <div class="radioBox">
+          <input type="radio" name="professional-second" id="pro-s-p" />
+          <label for="pro-s-p">poor</label>
+        </div>
+        <li id="q-5">
+          The employee’s behavior according to the company’s ethical code.
+        </li>
+        <div class="radioBox">
+          <input type="radio" name="professional-third" id="pro-t-e" />
+          <label for="pro-t-e">excellent</label>
+        </div>
+        <div class="radioBox">
+          <input type="radio" name="professional-third" id="pro-t-g" />
+          <label for="pro-t-g">good</label>
+        </div>
+        <div class="radioBox">
+          <input type="radio" name="professional-third" id="pro-t-p" />
+          <label for="pro-t-p">poor</label>
+        </div>
+      </ol>
+ 
+    </div>
+   
+    <div class="technicalSection">
+      <h3 class="criteriaHeader">technical Criteria <img id="showMore" onclick="showThree()" src="images/showmore.png"  ></h3>
+      <ol id="p3_text">
+        <li id="q-6">
+          the employee demonstrated the highest level of understanding of
+          the most complex design and implementation issues at every stage
+          of development.
+        </li>
+        <div class="radioBox">
+          <input type="radio" name="technical-first" id="t-f-e" />
+          <label for="t-f-e">excellent</label>
+        </div>
+        <div class="radioBox">
+          <input type="radio" name="technical-first" id="t-f-g" />
+          <label for="t-f-g">good</label>
+        </div>
+        <div class="radioBox">
+          <input type="radio" name="technical-first" id="t-f-p" />
+          <label for="t-f-p">poor</label>
+        </div>
+
+        <li id="q-7">
+          the employee has an exceptional way of finding things and get them
+          improved.
+        </li>
+        <div class="radioBox">
+          <input type="radio" name="technical-second" id="t-s-e" />
+          <label for="t-s-e">excellent</label>
+        </div>
+        <div class="radioBox">
+          <input type="radio" name="technical-second" id="t-s-g" />
+          <label for="t-s-g">good</label>
+        </div>
+        <div class="radioBox">
+          <input type="radio" name="technical-second" id="t-s-p" />
+          <label for="t-s-p">poor</label>
+        </div>
+        <li id="q-8">
+          the employee understands complicated issues, even when outside of
+          his direct area of expertise.
+        </li>
+        <div class="radioBox">
+          <input type="radio" name="technical-third" id="t-t-e" />
+          <label for="t-t-e">excellent</label>
+        </div>
+        
+        <div class="radioBox">
+          <input type="radio" name="technical-third" id="t-t-g" />
+          <label for="t-t-g">good</label>
+        </div> 
+         <div class="radioBox">
+          <input type="radio" name="technical-third" id="t-t-p" />
+          <label for="t-t-p">poor</label>
+        </div> 
+      </ol>   
+      
+    </div>
+ 
+    <div class="center">
+      <input class="submitEvaluationForm2" type="submit" value="Submit" />
+    </div>
+</form>
+</section>
+
+    <footer>CopyRight &copy; 3Val</footer>
+
+
+    <script>
+    document.getElementById("welcomeMessage").innerHTML= `Welcome ${sessionStorage.name}`
+    document.getElementById("start").addEventListener("click",(e)=>{
+      document.getElementById("fir").style.display="flex";
+    })
+
+
+      const p1Text = document.getElementById("p1_text");
+      const p2Text = document.getElementById("p2_text");
+      const p3Text = document.getElementById("p3_text");
+      const selection =  document.getElementById("employeeNameSelect");
+     
+
+
+function showOne(){
+  p1Text.style.display='block';
+}
+
+function showTwo(){
+  p2Text.style.display='block';
+}
+
+function showThree(){
+  p3Text.style.display='block';
+}
+
+
+
+selection.addEventListener('change', (event) => {
+  
+  document.getElementById("q-0").textContent =`${event.target.value} personality and charisma is truly magnetic.`;
+  document.getElementById("q-1").textContent =`${event.target.value} is a person of charisma and influence.`;
+  document.getElementById("q-2").textContent =`${event.target.value} is a very soft spoken person and never lose his temper.`;
+  document.getElementById("q-3").textContent =`${event.target.value} dress and personal appearance.`;
+  document.getElementById("q-4").textContent =`${event.target.value} is accountable for her tasks.`;
+  document.getElementById("q-5").textContent =`${event.target.value} behavior according to the company’s ethical code.`;
+  document.getElementById("q-6").textContent =`${event.target.value}  the employee demonstrated the highest level of understanding of
+          the most complex design and implementation issues at every stage
+          of development.`;
+  document.getElementById("q-7").textContent =`${event.target.value} has an exceptional way of finding things and get them
+          improved.`;
+  document.getElementById("q-8").textContent =`${event.target.value} understands complicated issues, even when outside of
+          his direct area of expertise.`;
+
+});
+
+
+let mySelect = document.getElementById('employeeNameSelect');
+mySelect.onchange = () => {
+    storage(mySelect.value);
+}
+function storage(empName) {
+    let emp1Arr = [];
+    // Q1 (Personal Critieria);
+
+    let pfe = document.getElementById('p-f-e');
+    let pfg = document.getElementById('p-f-g');
+    let pfp = document.getElementById('p-f-p');
+
+    pfe.onclick = () => {
+        emp1Arr[0] = `Excellent`;
+    }
+    pfg.onclick = () => {
+        emp1Arr[0] = `Good`
+
+    }
+    pfp.onclick = () => {
+        emp1Arr[0] = `Poor`
+    }
+
+    // Q2 (Personal Critieria);
+    let pse = document.getElementById('p-s-e');
+    let psg = document.getElementById('p-s-g');
+    let psp = document.getElementById('p-s-p');
+
+
+    pse.onclick = () => {
+        emp1Arr[1] = `Excellent`
+
+    }
+    psg.onclick = () => {
+        emp1Arr[1] = `Good`
+
+    }
+    psp.onclick = () => {
+        emp1Arr[1] = `Poor`
+
+    }
+
+    let pte = document.getElementById('p-t-e');
+    let ptg = document.getElementById('p-t-g');
+    let ptp = document.getElementById('p-t-p');
+
+    pte.onclick = () => {
+        emp1Arr[2] = `Excellent`
+
+
+    }
+    ptg.onclick = () => {
+        emp1Arr[2] = `Good`
+
+
+    }
+    ptp.onclick = () => {
+        emp1Arr[2] = `Poor`
+
+
+    }
+    // Q1 (Professional Critieria);
+
+    let profe = document.getElementById('pro-f-e');
+    let profg = document.getElementById('pro-f-g');
+    let profp = document.getElementById('pro-f-p');
+
+    profe.onclick = () => {
+        emp1Arr[3] = `Excellent`
+
+
+    }
+    profg.onclick = () => {
+        emp1Arr[3] = `Good`
+
+    }
+    profp.onclick = () => {
+        emp1Arr[3] = `Poor`
+
+    }
+    // Q2 (Professional Critieria);
+
+    let prose = document.getElementById('pro-s-e');
+    let prosg = document.getElementById('pro-s-g');
+    let prosp = document.getElementById('pro-s-p');
+
+    prose.onclick = () => {
+        emp1Arr[4] = `Excellent`
+
+    }
+    prosg.onclick = () => {
+        emp1Arr[4] = `Good`
+
+    }
+    prosp.onclick = () => {
+        emp1Arr[4] = `Poor`
+
+    }
+    // Q3 (Professional Critieria);
+
+    let prote = document.getElementById('pro-t-e');
+    let protg = document.getElementById('pro-t-g');
+    let protp = document.getElementById('pro-t-p');
+
+    prote.onclick = () => {
+        emp1Arr[5] = `Excellent`
+
+    }
+    protg.onclick = () => {
+        emp1Arr[5] = `Good`
+
+    }
+    protp.onclick = () => {
+        emp1Arr[5] = `Poor`
+
+    }
+
+    // Q1 (technicalSection Critieria);
+
+    let tfe = document.getElementById('t-f-e');
+    let tfg = document.getElementById('t-f-g');
+    let tfp = document.getElementById('t-f-p');
+
+    tfe.onclick = () => {
+        emp1Arr[6] = `Excellent`
+
+    }
+    tfg.onclick = () => {
+        emp1Arr[6] = `Good`
+
+
+    }
+    tfp.onclick = () => {
+        emp1Arr[6] = `Poor`
+
+    }
+
+    // Q2 (technicalSection Critieria);
+
+    let tse = document.getElementById('t-s-e');
+    let tsg = document.getElementById('t-s-g');
+    let tsp = document.getElementById('t-s-p');
+
+    tse.onclick = () => {
+        emp1Arr[7] = `Excellent`
+
+    }
+    tsg.onclick = () => {
+        emp1Arr[7] = `Good`
+
+    }
+    tsp.onclick = () => {
+        emp1Arr[7] = `Poor`
+
+    }
+
+    // Q3 (technicalSection Critieria);
+
+    let tte = document.getElementById('t-t-e');
+    let ttg = document.getElementById('t-t-g');
+    let ttp = document.getElementById('t-t-p');
+
+    tte.onclick = () => {
+        emp1Arr[8] = `Excellent`
+
+        localStorage.setItem(empName, JSON.stringify(emp1Arr));
+    }
+    ttg.onclick = () => {
+        emp1Arr[8] = `Good`
+
+        localStorage.setItem(empName, JSON.stringify(emp1Arr));
+    }
+    ttp.onclick = () => {
+        emp1Arr[8] = `Poor`
+
+        localStorage.setItem(empName, JSON.stringify(emp1Arr));
+    }
+}
+
+
+  </script>
+  
+
+
+  </body>
+</html>
+
+
+
